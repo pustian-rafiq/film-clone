@@ -2,14 +2,16 @@
     font-size: 14px;
     color: white;
     position: fixed;
-    top:0;
+    top: 0;
     width: 100%;
     z-index: 999;
-    background: linear-gradient(to top, transparent 0%, rgb(0,0,0,0.3) 50%);
+    background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.3) 50%);
 
-&.scrolled{
-    background-color: var(--main-color);
-}
+    // eksathe onek gulo classname use krole 2nd theke son gulor age & sign hbe
+    &.scrolled {
+        background-color: var(--main-color);
+    }
+
     .container {
         padding: 0px 50px;
         display: flex;
@@ -55,18 +57,20 @@
                     background-color: var(--main-color);
                     border-radius: 5px;
                 }
-                span{
+
+                span {
                     padding: 10px;
                     cursor: pointer;
                     // background-color: #fff;
                 }
-                &:hover{
-                    .options{
+
+                &:hover {
+                    .options {
                         display: flex;
                         flex-direction: column;
                         position: fixed;
                     }
-                
+
                 }
             }
         }
