@@ -8,6 +8,20 @@
         left: 50px;
         font-size: 30px;
         font-weight: 500;
+        color: white;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        select{
+           
+            background-color: var(--main-color);
+            border-radius: 1px solid white;
+            margin-left: 20px;
+            padding: 5px;
+            cursor: pointer;
+            color: white;
+        }
     }
 
     img {
