@@ -6,6 +6,7 @@ dotenv.config()
 
 //Import routes
 const authRoutes = require('./routes/authRoute')
+const userRoutes = require('./routes/userRoute')
 
 
 
@@ -26,6 +27,7 @@ mongoose.connect(process.env.MONGO_URL,{
 app.use(express.json())
 //Call routes
 app.use('/server/auth', authRoutes)
+app.use('/server/users', userRoutes)
 
 app.get('/', (req, res) => {
     res.json({
