@@ -7,6 +7,7 @@ dotenv.config()
 //Import routes
 const authRoutes = require('./routes/authRoute')
 const userRoutes = require('./routes/userRoute')
+const movieRoutes = require('./routes/movieRoute')
 
 
 
@@ -25,9 +26,11 @@ mongoose.connect(process.env.MONGO_URL,{
 })
 
 app.use(express.json())
+
 //Call routes
 app.use('/server/auth', authRoutes)
 app.use('/server/users', userRoutes)
+app.use('/server/movie', movieRoutes)
 
 app.get('/', (req, res) => {
     res.json({
