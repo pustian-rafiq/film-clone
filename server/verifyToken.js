@@ -4,7 +4,6 @@ const verify = (req,res,next) => {
     const authHeader = req.headers.token;
 
     if(authHeader){
-        console.log("http://localhost:8080/server/users/627cf38236949e48fe381ed8")
         const token = authHeader.split(" ")[1];
         console.log(token)
 
