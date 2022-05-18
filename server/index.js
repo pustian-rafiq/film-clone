@@ -8,6 +8,7 @@ dotenv.config()
 const authRoutes = require('./routes/authRoute')
 const userRoutes = require('./routes/userRoute')
 const movieRoutes = require('./routes/movieRoute')
+const listRoutes = require('./routes/listRoute')
 
 
 
@@ -31,6 +32,7 @@ app.use(express.json())
 app.use('/server/auth', authRoutes)
 app.use('/server/users', userRoutes)
 app.use('/server/movie', movieRoutes)
+app.use('/server/lists', listRoutes)
 
 app.get('/', (req, res) => {
     res.json({

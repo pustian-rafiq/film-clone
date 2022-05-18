@@ -14,9 +14,7 @@ const listSchema = new mongoose.Schema({
     },
     content: {
         type: Array,
-    },
-   
-    
+    },  
 },
 {
     timestamps: true

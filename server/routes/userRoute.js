@@ -1,6 +1,6 @@
 const router = require('express').Router()
 const User = require("../models/User")
-const verify = require('../verifyToken')
+const verify = require('../middleware/verifyToken')
 const CryptoJS = require("crypto-js");
 
 //Update routes
